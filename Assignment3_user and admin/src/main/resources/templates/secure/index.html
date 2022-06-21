@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="UTF-8">
+<title>Secure Home Page</title>
+</head>
+<body>
+	
+	
+<h1>This is a secured page!</h1>
+<p><a href="/" th:href="@{/}">Back to home page</a></p> 
+<p><a href="#" th:href="@{/logout}">Logout</a></p>	
+
+	<a href="/secure/insert" th:href="@{/secure/insert}">Insert</a>
+	<a href="/secure/update" th:href="@{/secure/update}">Update</a>
+	<a href="/secure/delete" th:href="@{/secure/delete}">Delete</a>
+	<a href="/secure/view" th:href="@{/secure/view}">View Records</a>
+
+</body>
+</html>
